@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #e3e3e3
+      }
+    </style>
+  </head>
+  <body>
+    <p style="text-align:center;"><img id="image" align="middle" /></p>
+  </body>
+  <script type="text/javascript">
+    function Gay() {
+      var Images = ["https://i.imgur.com/glsAXaf.png", "https://i.imgur.com/BRQq14D.gif"];
+	  var Backgrounds = ['#e3e3e3','#fdfffc']
+      var Choice = Math.floor(Math.random() * Images.length);
+      document.getElementById("image").src = Images[Choice];
+	  document.body.style.background = Backgrounds[Choice];
+    }
+    window.onload = Gay();
+  </script>
+</html>
